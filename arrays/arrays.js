@@ -47,7 +47,8 @@ let array3 = JSON.parse(JSON.stringify(array1))
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
 array2[0] = "Not";
-array3[3] = "copy";
+// array3[3] = "copy";
+array3[array3.length - 1] = "copy";
 
 ////////////////////////////////////////////////////////////////////////
 

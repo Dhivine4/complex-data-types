@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = ["one"]
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list1.copy()
+listCopy.append(appendElement)
 
 ########################################################################
 
@@ -55,8 +56,10 @@ cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
-
+firstNumber = cycleMe.pop(0)
+cycleMe.append(firstNumber)
+firstNumber = cycleMe.pop(0)
+cycleMe.append(firstNumber)
 ########################################################################
 
 
@@ -75,7 +78,7 @@ keepMe = clearJustMe
 ###################### YOUR CODE BELOW THIS LINE #######################
 
 
-
+clearJustMe = []
 ########################################################################
 
 
@@ -93,7 +96,7 @@ loseMe = clearAll
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearAll.clear()
 
 ########################################################################
 
@@ -111,7 +114,7 @@ allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-top3Scores = None
+top3Scores = sorted(allScores, reverse=True)[:3]
 
 ########################################################################
 
