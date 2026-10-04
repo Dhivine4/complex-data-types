@@ -30,7 +30,7 @@ appendElement = "ok?"
 #  'list1' should remain unchanged
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
+# listCopy = list1[:]
 listCopy = list1.copy()
 listCopy.append(appendElement)
 
@@ -55,11 +55,12 @@ cycleMe = list(range(1, random.randint(5, 15)))
 cycleMeCopy = list(cycleMe)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
-
-firstNumber = cycleMe.pop(0)
-cycleMe.append(firstNumber)
-firstNumber = cycleMe.pop(0)
-cycleMe.append(firstNumber)
+cicleMe.append(cycleMe.pop(0))
+cicleMe.append(cycleMe.pop(0))
+# firstNumber = cycleMe.pop(0)
+# cycleMe.append(firstNumber)
+# firstNumber = cycleMe.pop(0)
+# cycleMe.append(firstNumber)
 ########################################################################
 
 
