@@ -120,8 +120,10 @@ studentCopy = dict(student)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-student["grade"] = studentGrade + 1
-student["gpa"] = studentGPA - 0.15
+# student["grade"] = studentGrade + 1
+student["grade"] += 1
+# student["gpa"] = studentGPA - 0.15
+student["gpa"] -= 0.15
 student["courses"].append({"subjec": "MATH", "levle": "204"})
 student["absences"] = 1
 
